@@ -30,7 +30,7 @@ Please feel free to use a different markup language if you do not plan to run
 ## membersテーブル
 
 |Column|Type|Options|
-|user_id|integer|null: false, foreign_key: true, index: trye|
+|user_id|integer|null: false, foreign_key: true, index: true|
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
