@@ -57,3 +57,4 @@ Please feel free to use a different markup language if you do not plan to run
 ### Association
 - belongs_to :user
 - belongs_to :member
+
