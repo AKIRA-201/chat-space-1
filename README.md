@@ -30,31 +30,35 @@ Please feel free to use a different markup language if you do not plan to run
 ## membersテーブル
 
 |Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true, index: trye|
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
 - belongs_to :user
 
-## userテーブル
+## usersテーブル
 |Column|Type|Options|
-|user_id|integer|null: false, foreign_key: true|
-|name|text|null: false, foreign_key: true|
-|email|string|null: false, foreign_key: true|
-|password|string|null: false, foreign_key: true|
+|name|string|null: false, index: true|
+|email|string|null: false, |
 
 ### Association
-- belongs_to :group
-- belongs_to :member
+- has_many :messages
+- has_many :members
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
+|group|string|Options|
 |user_id|integer|null: false, foreign_key: true|
-|message|text|-------|
-
 ### Association
 - belongs_to :user
-- belongs_to :member
+- belongs_to :members
+
+## messagesテーブル
+|Column|Type|Options|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :groups
+- belongs_to :users
 
