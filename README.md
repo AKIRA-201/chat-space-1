@@ -1,6 +1,3 @@
-== README
-
-
 ## membersテーブル
 
 |Column|Type|Options|
@@ -13,7 +10,6 @@
 
 ## usersテーブル
 |Column|Type|Options|
-|------|----|-------|
 |name|string|null: false, index: true|
 |email|string|null: false, |
 
@@ -24,7 +20,6 @@
 
 ## groupsテーブル
 |Column|Type|Options|
-|------|----|-------|
 |name|string|null: false, index: true|
 ### Association
 - has_many :users
