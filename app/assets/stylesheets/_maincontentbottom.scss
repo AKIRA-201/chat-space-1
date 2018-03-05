@@ -1,0 +1,36 @@
+.maincontentbottom{
+  background: #FAFAFA;
+.maincontentbottomusername{
+  margin-right: 10px;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #434A54;
+  padding-left: 40px;
+}
+.maincontentbottomdateandtime{
+  font-size: 12px;
+  color: #999999;
+  padding-right: 40px;
+  margin-left: 10px;
+}
+.maincontentbottomumessage{
+  clear: both;
+  font-size: 14px;
+  font-weight: bold;
+  color: #434A54;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+//投稿する部分
+.maincontenttoukou{
+  width: calc(100% - 50px);
+  background-color: #DDDDDD;
+  font-size: 16px;
+  color: #434A54;
+  padding: 20px 0 20px 50px;
+  position: absolute;
+    bottom: 0;
+
+}
+}

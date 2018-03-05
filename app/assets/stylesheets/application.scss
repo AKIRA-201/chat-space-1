@@ -1,0 +1,9 @@
+@import "./reset";
+@import "./messages";
+@import "font-awesome";
+@import "header"; /* _header.scssを読み込む ヘッダー */
+@import "leftcontent"; /*レフトコンテント */
+@import "leftcontentgroup"; /*レフトコンテントグループ*/
+@import "maincontenttop";  /*メインコンテンツトップ*/
+@import "maincontentbottom";
+@import "toukou";  /*投稿部分*/
