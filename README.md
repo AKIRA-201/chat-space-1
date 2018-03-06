@@ -1,7 +1,7 @@
 ## membersテーブル
 
 | Column   | Type    | Options |
-|:-------- |:------- |:------- |
+ --------- | ------- | --------
 | user_id  | integer | null: false, references: user, foreign_key: true, index: true |
 | group_id | integer | null: false, foreign_key: true |
 
@@ -11,7 +11,7 @@
 
 ## usersテーブル
 | Column | Type   | Options |
-|:------ |:------ |:------- |
+ ------- | ------ | --------
 | name   | string | null: false, index: true |
 | email  | string | null: false, |
 
@@ -22,7 +22,7 @@
 
 ## groupsテーブル
 | Column | Type   | Options |
-|:------ |:------ |:------- |
+ ------- | ------ | --------
 | name   | string | null: false, index: true |
 
 ### Association
@@ -32,7 +32,7 @@
 
 ## messagesテーブル
 | Column   | Type    | Options |
-|:-------- |:------- |:------- |
+ --------- | ------- | --------
 | body     | string  | ------- |
 | image    | string  | ------- |
 | user_id  | integer | null: false, references: user, foreign_key: true |
