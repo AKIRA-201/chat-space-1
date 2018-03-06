@@ -3,8 +3,8 @@
 @import "font-awesome";
 @import "header"; /* _header.scssを読み込む ヘッダー */
 @import "leftcontent"; /*レフトコンテント */
-@import "leftcontentgroup"; /*レフトコンテントグループ*/
-@import "maincontenttop";  /*メインコンテンツトップ*/
-@import "maincontentbottom";
-@import "maincontenttoukou"; /*投稿部分全体*/
-@import "toukou";  /*投稿部分*/
+@import "leftcontent__group"; /*レフトコンテントグループ*/
+@import "maincontent__top";  /*メインコンテンツトップ*/
+@import "maincontent__bottom";
+@import "maincontent__toukou"; /*投稿部分全体*/
+

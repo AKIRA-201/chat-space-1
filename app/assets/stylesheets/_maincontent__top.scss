@@ -1,7 +1,7 @@
   //メインコンテンツ上
-.maincontenttop{
+.maincontent__top{
   background: #FAFAFA;
-.maincontentgroupname{
+.maincontent__top--groupname{
   margin-top: 35px;
   float: left;
   font-size: 20px;
@@ -9,7 +9,7 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-.maincontettopedit{
+.maincontet__top--edit{
   float: right;
   margin-top: 28px;
   color: #38AEF0;
@@ -18,7 +18,7 @@
   padding: 0 20px 0 20px;
   border: medium solid #38AEF0;
 }
-.maincontentmembername{
+.maincontent__top--membername{
   clear: both;
   padding-left: 40px;
   font-size: 12px;
