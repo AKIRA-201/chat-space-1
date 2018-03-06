@@ -35,8 +35,8 @@
  --------- | -------   | --------
 | body     | string    | ------- |
 | image    | string    | ------- |
-| user     | refrences | null: false, foreign_key: true |
-| group    | refrences | null: false, foreign_key: true |
+| user     | references | null: false, foreign_key: true |
+| group    | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :group
