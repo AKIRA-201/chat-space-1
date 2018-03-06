@@ -24,6 +24,7 @@
 | Column | Type   | Options |
 |:------ |:------ |:------- |
 | name   | string | null: false, index: true |
+
 ### Association
 - has_many :users
 - has_many :members
@@ -36,8 +37,8 @@
 | image    | string  | ------- |
 | user_id  | integer | null: false, references: user, foreign_key: true |
 | group_id |integer  | null: false, foreign_key: true |
+
 ### Association
 - belongs_to :group
 - belongs_to :user
 
-references: user
