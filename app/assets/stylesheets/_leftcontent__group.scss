@@ -2,15 +2,15 @@
     clear: both;
     padding: 20px 20px 5px 20px;
     margin-bottom: 40px;
-    .leftcontent__group--name{
-      font-size: 15px;
-      margin-bottom: 5px;
+    &--name{
+     font-size: 15px;
+     margin-bottom: 5px;
     }
-    .leftcontent__group--newmessage{
-      color: #FFFFFF;
-      font-size: 11px;
+    &--newmessage{
+     color: #FFFFFF;
+     font-size: 11px;
     }
-    .leftcontent__grounp:hover{
-      opacity: 0.7;
+    &__grounp:hover{
+     opacity: 0.7;
     }
   }
