@@ -1,0 +1,16 @@
+   .leftcontent__group{
+    clear: both;
+    padding: 20px 20px 5px 20px;
+    margin-bottom: 40px;
+    &--name{
+     font-size: 15px;
+     margin-bottom: 5px;
+    }
+    &--newmessage{
+     color: #FFFFFF;
+     font-size: 11px;
+    }
+    &__grounp:hover{
+     opacity: 0.7;
+    }
+  }

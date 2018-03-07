@@ -1,0 +1,36 @@
+  //メインコンテンツ上
+.maincontent__top{
+  background: #FAFAFA;
+  &--groupname {
+   margin-top: 35px;
+   float: left;
+   font-size: 20px;
+   color: #333333;
+   padding-left: 40px;
+   padding-right: 40px;
+ }
+  &--edit {
+   float: right;
+   margin-top: 28px;
+   color: #38AEF0;
+   background: white;
+   margin-right: 40px;
+   padding: 0 20px 0 20px;
+   border: medium solid #38AEF0;
+ }
+  &--membername{
+   clear: both;
+   padding-left: 40px;
+   font-size: 12px;
+   color: #999999;
+   padding-left: 40px;
+   padding-right: 40px;
+ }
+hr{
+  height: 2px;
+  background-color: #eeeeee;
+  border: none;
+}
+}
+
+

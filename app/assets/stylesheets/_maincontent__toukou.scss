@@ -1,0 +1,59 @@
+//投稿する部分
+.maincontent__toukou{
+  width: calc(100% - 50px);
+  background-color: #DDDDDD;
+  font-size: 16px;
+  color: #434A54;
+  padding: 20px 0 20px 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+    // 投稿エリア
+textarea{
+ float: left;
+ resize: none;
+ margin-bottom: -7.5px;
+ height: 50px;
+ width: calc(100% - 180px);
+ border:none;
+}
+.textarea{
+display: inline-block;
+color: white;
+background: white;
+}
+.textarea input {
+    display: none;
+}
+::placeholder {
+    padding-left: 15px;
+    padding-top: 13px;
+}
+// 画像ファイルボタン
+.file-btn {
+    float: left;
+    height: 30px;
+    padding: 10px 10px;
+    display: inline-block;
+    color: black;
+    background: white;
+    cursor: pointer;
+    margin-left: -6px;
+}
+.file-btn input {
+    display: none;
+}
+// sendボタン
+.filesend{
+   float: right;
+    display: inline-block;
+    padding: 12px 27px;
+    color: white;
+    background: #38AEF0;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.filesend input {
+    display: none;
+}
