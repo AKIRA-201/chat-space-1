@@ -10,7 +10,7 @@
 }
 
     // 投稿エリア
-textarea{
+.form__message{
  float: left;
  resize: none;
  margin-bottom: -7.5px;
@@ -41,7 +41,7 @@ background: white;
     cursor: pointer;
     margin-left: -6px;
 }
-.file-btn input {
+.hidden {
     display: none;
 }
 // sendボタン
