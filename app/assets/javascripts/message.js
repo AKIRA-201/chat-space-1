@@ -1,18 +1,18 @@
 $(function(){
   function buildHTML(message){
-    var html = `<div class="message">
-                 <div class="maincontent__bottom--username">
-                  ${message.user_name}
-                  </div>
-                   <div class="maincontent__bottom--dateandtime">
-                    ${message.data}
-                    </div>
-                      <div class="maincontent__bottom--message">
-                       ${message.content}
-                       </div>
-                       <img src="${message.image}">
-                       </div>`
-
+    var html =
+    `<div class="message">
+      <div class="maincontent__bottom--username">
+      ${message.user_name}
+      </div>
+      <div class="maincontent__bottom--dateandtime">
+      ${message.data}
+      </div>
+      <div class="maincontent__bottom--message">
+      ${message.content}
+      </div>
+      <img src="${message.image}">
+    </div>`
     return html;
   }
   $('#new_message').on('submit', function(e){
@@ -28,7 +28,6 @@ $(function(){
       processData: false,
       contentType: false
   })
-
 .done(function(data){
   var html = buildHTML(data);
   $('.maincontent__bottom').append(html)
@@ -41,14 +40,3 @@ $(function(){
     })
 })
 });
-
-
-
-
-// $(function(){
-//   $('#new_message').on('submit', function(e){
-//     e.preventDefault();
-//     console.log(this)
-//     var formData = new FormData(this);
-//   })
-// })
