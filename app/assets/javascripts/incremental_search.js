@@ -11,7 +11,6 @@ var search_list = $(".user-search-result");
               `
     search_list.append(html);
   }
-// 一致する人がいない場合
   function appendNoUser(user) {
     var html =
               `<div class="chat-group-user clearfix">
@@ -54,7 +53,7 @@ var search_list = $(".user-search-result");
              `
     return html;
   }
-// 追加ボタンクリック
+
   $(document).on("click", ".user-search-add", function(){
     var id = $(this).data('user-id');
     var name = $(this).data('user-name');
