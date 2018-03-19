@@ -35,7 +35,7 @@ var search_list = $(".user-search-result");
           appendUser(user);
         });
       }else{
-        appendNoUser("一致する人がいません");
+        appendNoUser();
       }
     })
     .fail(function() {
