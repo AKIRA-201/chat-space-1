@@ -1,0 +1,13 @@
+
+%div.maincontent__toukou
+  .form
+    = form_for [@group, @message], id: "new_message" do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o', class: 'file-btn'
+          = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'filesend'
+
+
+/ 投稿する部分

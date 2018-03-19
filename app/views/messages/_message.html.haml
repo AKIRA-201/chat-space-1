@@ -1,0 +1,8 @@
+%div.message
+  %p.maincontent__bottom--username
+    = message.user.name
+  %p.maincontent__bottom--dateandtime
+    = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  %p.maincontent__bottom--message
+    = message.content
+  = image_tag message.image.url if message.image.present?

@@ -13,16 +13,20 @@
    font-style: bold;
    font-size: 16px;
   }
+  .lists{
+  list-style:none;
+  float: right;
+  padding-right: 150px;
+  }
   .fa.fa-pencil-square-o{
-
-    margin-left: 120px;
-    padding-top: 20px;
     color: white;
   }
   .fa.fa-cog{
-
-    padding-top: 20px;
     color: white;
   }
 }
 
+
+li.list{
+  float: left;
+}

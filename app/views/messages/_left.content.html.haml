@@ -1,0 +1,23 @@
+/ 左側
+%div.leftcontent
+  %div.leftcontent__username
+    = current_user.name
+    .lists
+      %li.list
+        = link_to new_group_path do
+          = fa_icon 'pencil-square-o'
+      %li.list
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog'
+      /*グループ名前*/
+  %div.leftcontent__group
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        %p.leftcontent__group--name
+          = group.name
+        %p.leftcontent__group--newmessage
+          = group.show_last_message
+
+
+
+
