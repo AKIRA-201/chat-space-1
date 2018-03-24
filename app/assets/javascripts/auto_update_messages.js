@@ -35,15 +35,14 @@ var interval = setInterval(function(){
     })
     .done(function(data){
       var insertHTML = '';
-      console.log(data);
       data.messages.forEach(function(message) {
         insertHTML += buildHTML(message);
         $(".maincontent__bottom").append(insertHTML);
       });
     })
-    // .fail(function(data){
-    //   alert('更新に失敗しました');
-    // });
+    .fail(function(data){
+      alert('更新に失敗しました');
+    });
 }else{
   clearInterval(interval);
 }}, 5000);
