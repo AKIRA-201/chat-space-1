@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     var img = ""
     if(message.image !==null){
-      image = `<img src="${message.image}">`
+      img = `<img src="${message.image}">`
     }
     var html =
       `<div class="message" data-message-id="${message.id}">
@@ -22,8 +22,12 @@ $(function(){
   }
 
 var interval = setInterval(function(){
-  // メッセージのラストのid
+  // メッセージのラストのid メッセージがない場合0にする
+  if($('.message')[0]){
   var message_id = $('.message:last').data('message-id');
+   }else{
+    var message_id = 0
+   }
   if(window.location.href.match(/\/groups\/\d+\/messages/)){
     $.ajax({
       url: window.location.href,
@@ -43,6 +47,7 @@ var interval = setInterval(function(){
     .fail(function(data){
       alert('更新に失敗しました');
     });
+}
 }else{
   clearInterval(interval);
 }}, 5000);
