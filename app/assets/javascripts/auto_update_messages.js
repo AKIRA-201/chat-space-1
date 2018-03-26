@@ -20,9 +20,8 @@ $(function(){
 
 var interval = setInterval(function(){
   // メッセージのラストのid メッセージがない場合0にする
-  if($('.message')[0]){
     var messageId
-    messageId == null ? messageId = 0 : messageId = $('.message:last').data('message-id')
+    $('.message') == null ? messageId = 0 : messageId = $('.message:last').data('message-id')
   if(window.location.href.match(/\/groups\/\d+\/messages/)){
     $.ajax({
       url: window.location.href,
@@ -46,3 +45,4 @@ var interval = setInterval(function(){
   clearInterval(interval);
 }}, 5000);
 });
+
