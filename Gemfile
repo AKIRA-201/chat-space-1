@@ -20,6 +20,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'pry-rails'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'byebug', platform: :mri
