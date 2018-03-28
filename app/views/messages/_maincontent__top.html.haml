@@ -1,5 +1,9 @@
 %div.maincontent__top
-  %p.maincontent__top--groupname sampleグループ
+  %p.maincontent__top--groupname
+    = @group.name
   %p.maincontent__top--edit Edit
-  %p.maincontent__top--membername Members: a b c d
+  %p.maincontent__top--membername
+    Members:
+    - @group.users.each do |member|
+      = member.name
   %hr
